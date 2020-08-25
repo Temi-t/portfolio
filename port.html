@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <title>Sticky nav portforlio</title>
+    <script src="https://kit.fontawesome.com/23c464bde0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navigation ........................-->
+    <nav class="sticky">
+      <!-- logo -->
+      <a href="#" class='logo'>Planet 4 corp.</a>
+      <!-- menu -->
+      <ul>
+        <li> <a href="#" class="active">Home</a> </li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Projects</a> </li>
+        <li> <a href="#">Contact</a> </li>
+      </ul>
+    </nav>
+
+
+    <section class='heading-banner'>
+      <!-- text -->
+      <!-- <div class="left-banner"> -->
+        <div class="text-container">
+          <p>Hello,</p>
+          <p>I'm Temi</p>
+          <p>I am a Petroleum <br> & Software Engineer</p>
+          <a href="#" class="hire-btn"><span>Hire me</span></a>
+        </div>
+      <!-- </div> -->
+        <!-- model -->
+      <div class="right-banner">
+        <!-- <img src="pp 2.jpg" class='model' alt="native man"> -->
+      </div>
+    </section>
+
+
+    <!-- about-section......................... -->
+      <div class="about-container">
+        <!-- img -->
+        <img class='white-img' src="aboutMe.jpg" alt="">
+        <!-- about text -->
+        <div class="about-text">
+          <p>About Me</p>
+          <p>Petroleum & Software Engineer  </p>
+          <p> My name is Temi-tayo. I am a highly motivatied fullstack developer with a focus on front-end technology. I write scalable code in Python and ReactJS </p>
+          <p>If you're in need of a front-end engineer with modern and responsive design competency for hire- I'm definitely the guy you're looking for.</p>
+          <button type="button" name="button">Download CV</button>
+        </div>
+      </div>
+
+    <!-- services I offer ....................-->
+      <!-- <div class="services"> -->
+        <!-- services-text -->
+        <!-- <div class="services-text"> -->
+          <!-- <p>Services</p>
+          <p>My Stack</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div> -->
+        <!-- box-container -->
+        <!-- <div class="box-container"> -->
+          <!-- box 1 -->
+          <!-- <div class="box-1">
+            <span>1</span>
+            <p class='heading'>Front-end</p>
+            <p class-"details">Lorem ipsum dolor sit amet,  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" name="button">Read More</button>
+          </div> -->
+          <!-- box 2 -->
+          <!-- <div class="box-2">
+            <span>2</span>
+            <p class='heading'>Back-end</p>
+            <p class-"details">Lorem ipsum dolor sit amet,  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" name="button">Read More</button>
+          </div> -->
+          <!-- box 3 -->
+          <!-- <div class="box-3">
+            <span>3</span>
+            <p class='heading'>Petroleum</p>
+            <p class-"details">Lorem ipsum dolor sit amet,  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" name="button">Read More</button>
+          </div>
+        </div>
+      </div> -->
+      <!-- contact -->
+      <div class="contact-me">
+        <p>Do you have a project in mind ?</p>
+        <button type="button" name="button">Contact Me</button>
+      </div>
+      <!-- footer -->
+      <footer>
+        <p>Planet 4 Corporation</p>
+        <p>Expecting to hear from you as soon as possible</p>
+        <!-- user-icons -->
+        <div class="user-icons">
+          <a href="https://github.com/Temi-t" target='_blank'> <i class="fab fa-github"></i> </a>
+          <a href="https://www.linkedin.com/in/temitayo-oyebode-334b9b80/" target='_blank'><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-stack-overflow"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- copyright -->
+        <p class='copyright'>copyright by Planet4corp.</p>
+      </footer>
+      <!-- side attachment -->
+      <div class="side-icons">
+        <a href="https://github.com/Temi-t" target='_blank'> <i class="fab fa-github"></i> </a>
+        <a href="https://www.linkedin.com/in/temitayo-oyebode-334b9b80/" target='_blank'><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-stack-overflow"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <script type="text/javascript">
+      window.addEventListener('scroll', function(){
+        var nav = document.querySelector('nav');
+        nav.classList.toggle("sticky", window.scrollY > 0)
+      });
+      </script>
+  </body>
+</html>
