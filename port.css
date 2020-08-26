@@ -93,7 +93,7 @@ nav.sticky::before{
 }
 nav .logo{
   position: relative;
-  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
   color: black;
   font-size: 2em;
   transition: 0.6s;
@@ -130,7 +130,8 @@ nav.sticky ul li a{
   align-content: center;
   width: 100%;
   height: auto;
-  background: lightblue;
+  /* background: lightblue; */
+  background: #e6f0ff;
 }
 
 .text-container{
