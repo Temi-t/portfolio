@@ -31,6 +31,7 @@ a{
 p{
   font-size: 1.8rem;
   font-weight: 300;
+  letter-spacing: normal;
 }
 img{
   width: 100%;
@@ -102,7 +103,6 @@ height: 100vh;
   height: 100vh;
   position: fixed;
   top: -100vh;
-  /* background-color: #16162d; */
   background-color: rgba(0,0,0,0.7);
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -120,7 +120,6 @@ li{
   margin: 0 2rem;
 }
 .nav-link{
-  /* font-family: 'Sacramento', cursive; */
   font-family: monospace;
   font-size: 3rem;
   padding: 1rem;
@@ -183,8 +182,6 @@ li{
   height: 20rem;
   width: 20rem;
   border: 0.2rem solid rgba(255, 255, 0, 0.8);
-  /* border: 0.3rem solid rgba(255,255,255,0.5); */
-
   border-radius: 50%;
 }
 .dude{
@@ -202,15 +199,7 @@ li{
     box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.3);
   }
 }
-/* .landing-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-} */
+
 .landing-text{
   position: absolute;
   top: 70%;
@@ -219,10 +208,8 @@ li{
   width: 100%;
   text-align: center;
   z-index: 1;
-  /* background: rgba(255, 255,255, 0.3); */
 }
 .landing-text h3{
-  /* transform: translateX(-8rem); */
   font-size: 4rem;
   font-weight: 500;
   color: rgba(255,255,255,0.5);
@@ -250,7 +237,6 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: rgba(255,255,255, 0.3); */
 }
 .about-heading{
   text-align: center;
@@ -269,8 +255,8 @@ li{
 .profile-img{
   margin-top: 5rem;
   margin-left: 4rem;
-  flex: 1;
-  /* min-width: 20rem; */
+  flex: 2;
+  max-width: 40rem;
 }
 .about-details{
   flex: 1;
@@ -297,7 +283,50 @@ li{
 /* End about */
 
 
-/* Start Services */
+/* Start Skills */
+.lang{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang p{
+  margin-right: auto;
+}
+.proficiencies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto 10rem auto;
+}
+.proficiency-container{
+  width: 60rem;
+  height: 5rem;
+  border: 2px solid #fd57bf;
+  border-radius: 4px;
+  margin: 3rem;
+}
+ .html{
+  width: 52rem;
+  height: 4.7rem;
+  background-color: yellow;
+}
+.css{
+ width: 48rem;
+ height: 4.7rem;
+ background-color: yellow;
+}
+.javascript{
+ width: 48rem;
+ height: 4.7rem;
+ background-color: yellow;
+}
+.reactjs{
+ width: 42rem;
+ height: 4.7rem;
+ background-color: yellow;
+}
+
+
 .my-skills{
   margin-top:10rem;
   display: grid;
@@ -312,11 +341,15 @@ li{
   align-items: center;
   padding: 2rem;
 }
+.skill ul{
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
 .skill h1{
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 2rem ;
-  /* margin: 2rem -2px 2rem 0; */
 }
 .icon-container{
   width: 10rem;
@@ -333,7 +366,7 @@ li{
   transform: rotate(-45deg);
   margin: auto;
 }
-/* End Services */
+/* End Skills */
 
 
 /* Start portfolio */
@@ -348,7 +381,6 @@ li{
   margin-bottom: 0;
 }
 .portfolio-img{
-  /* width: 50rem; */
   flex: 1;
 }
 .portfolio-description{
@@ -420,7 +452,6 @@ li{
   text-align: right;
   min-width: 12rem;
   font-size: 1.1rem;
-  /* font-size: 1.5rem; */
   padding-left: .5rem;/*experimental*/
 }
 .timeline .date::after{
@@ -436,11 +467,9 @@ li{
 
 
 /* contact-form-start */
-
 form{
   width: 70%;
   margin: 0 auto;
-  /* background: green; */
 }
 form label{
   font-size: 1.5rem;
@@ -527,8 +556,8 @@ input[type='submit']:hover{
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
   }
 }
-
 /* footer end */
+
 
 @media(max-width: 800px ){
   section{
@@ -537,17 +566,20 @@ input[type='submit']:hover{
   .landing-text h1{
     font-size: 12rem;
   }
-  /* .landing-text h6{
-    font-size: 1.7rem;
-  } */
+
   .nav-list{
     flex-direction: column;
+    padding-right: 7rem;
   }
   li{
-    margin: 2rem 0;
+    margin: 2rem 0 ;
   }
   .nav-link{
     font-size: 3.5rem;
+  }
+  .menu-toggler{
+    top: 2rem;
+    right: 2rem;
   }
   .about-heading h1{
     font-size: 7rem;
@@ -557,7 +589,7 @@ input[type='submit']:hover{
   }
   .profile-img{
     margin-bottom: 6rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
     width: 80%;
   }
   .section-heading h1{
@@ -569,6 +601,29 @@ input[type='submit']:hover{
   .about-details li{
     margin: 0 2rem;
   }
+
+  .proficiency-container{
+    width: 48rem;
+    height: 5rem;
+    margin: 3rem;
+  }
+   .html{
+    width: 41.6rem;
+    height: 4.7rem;
+  }
+  .css{
+   width: 38.4rem;
+   height: 4.7rem;
+  }
+  .javascript{
+   width: 38.4rem;
+   height: 4.7rem;
+  }
+  .reactjs{
+   width: 33.6rem;
+   height: 4.7rem;
+  }
+
   .icon-container{
     width: 7rem;
     height: 7rem;
@@ -580,12 +635,10 @@ input[type='submit']:hover{
     width: 95%;
   }
   .timeline ul{
-    /* margin: 0 0 0 6rem; */
     margin: 0 0 0 auto;
     width: 80%;
   }
   .timeline .date::before{
-    /* right: 18.5rem; */
     right: auto;
   }
   .timeline .date::after{
@@ -604,6 +657,32 @@ input[type='submit']:hover{
     margin: 0;
     order: 2;
   }
+
+  details{
+    display: none;
+  }
+  .proficiency-container{
+    width: 25.8rem;
+    height: 4rem;
+    margin: 3rem;
+  }
+   .html{
+    width: 21.96rem;
+    height: 3.7rem;
+  }
+  .css{
+   width: 20.04rem;
+   height: 3.7rem;
+  }
+  .javascript{
+   width: 20.04rem;
+   height: 3.7rem;
+  }
+  .reactjs{
+   width: 17.16rem;
+   height: 3.7rem;
+  }
+
   .timeline p{
     font-size: 1.6rem;
     font-weight: 100;
@@ -622,45 +701,7 @@ input[type='submit']:hover{
   .timeline .date::before{
     right: 24.5rem;
   }
+  .profile-img{
+    margin-left: 1rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* .lap{
-  background:url('portitem1.jpeg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-}
-.blk{
-  position: relative;
-  height: 300px;
-  width: 400px;
-  border-radius: 10px; */
-  /* padding: 30px; */
-  /* background: rgba(0,0,0,0.8);
-  background-color: rgba(57,89,85,0.3);
-}
-
-.blk p{
-  position: absolute;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  top: 5px;
-  padding: 25px;
-} */
