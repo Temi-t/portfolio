@@ -382,6 +382,11 @@ li{
 }
 .portfolio-img{
   flex: 1;
+  transition: 0.6s;
+}
+.portfolio-img:hover{
+  box-shadow: 0 0 10px grey;
+  background: blue;
 }
 .portfolio-description{
   flex: 1;
