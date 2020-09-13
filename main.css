@@ -255,8 +255,8 @@ li{
 .profile-img{
   margin-top: 5rem;
   margin-left: 4rem;
-  flex: 2;
   max-width: 40rem;
+  flex: 1;
 }
 .about-details{
   flex: 1;
@@ -265,7 +265,7 @@ li{
   margin-top: 5rem;
 }
 .social-media i{
-  transition: color 650ms;
+  transition: color 400ms;
   font-size: 5rem;
 }
 .fa-facebook-square:hover{
