@@ -325,6 +325,12 @@ li{
  height: 4.7rem;
  background-color: yellow;
 }
+.sql{
+ width: 48rem;
+ height: 4.7rem;
+ background-color: yellow;
+}
+
 
 
 .my-skills{
@@ -374,7 +380,7 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 30rem;
 
 }
 .portfolio-item:last-child{
