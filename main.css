@@ -18,7 +18,7 @@ html{
 body{
   width: 100%;
   height: 100%;
-  background: url('blurry.png') no-repeat center fixed;
+  background: url('images/blurry.png') no-repeat center fixed;
   background-size: cover;
 }
 section{
@@ -410,13 +410,14 @@ li{
 }
 .portfolio-description .cta{
   display: inline-block;
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
+  margin: 2.5rem 1.5rem;
   font-size: 1.5rem;
   color: #3883ff;
   transition: color 650ms;
 }
 .portfolio-description .cta:hover{
-  color: #2f67cd;
+  color: #ffe838;
 }
 /* End portfolio */
 
@@ -569,6 +570,64 @@ input[type='submit']:hover{
 }
 /* footer end */
 
+.vasiti-modal-bg, .jetflix-modal-bg, .dietApp-modal-bg, .travel-site-modal-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0 opacity 500ms;
+}
+.vasiti-active, .jetflix-active, .dietApp-active, .travel-site-active{
+  visibility: visible;
+  opacity: 1;
+}
+.modal-close, .jetflix-close, .dietApp-close, .travel-site-close{
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.demo-btn{
+  height: 35px;
+  width: 90px;
+  background-color: #fd57bf;
+  color: #eee;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 650ms;
+  margin: 10px;
+}
+.demo-btn:hover{
+  color: #221e3f;
+  background: #ffe838;
+}
+
+.vasiti-demo-box, 
+.jetflix-demo-box, 
+.dietApp-demo-box, 
+.travelSite-demo-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vasiti-demo-box video, 
+.jetflix-demo-box video, 
+.dietApp-demo-box video, 
+.travelSite-demo-box video{
+  height: 70%;
+  width: 70%;
+}
 
 @media(max-width: 800px ){
   section{
