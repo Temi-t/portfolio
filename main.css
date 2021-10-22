@@ -505,16 +505,19 @@ textarea:focus{
   margin-top: 1.5rem;
 }
 
-input[type='submit']{
+
+button[type='submit']{
   width: initial;
   background-color: #fd57bf;
   color: #eee;
+  font-size: 2rem;
+
   padding: 1rem 2rem;
   cursor: pointer;
   border: none;
   transition: background-color 650ms;
 }
-input[type='submit']:hover{
+button[type='submit']:hover{
   color: #221e3f;
   background: #ffe838;
 }
