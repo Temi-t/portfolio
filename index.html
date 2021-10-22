@@ -302,18 +302,34 @@
           <h1>Contact</h1>
           <h6>Let's work together</h6>
         </div>
-        <form class="" action="index.html" method="" data-aos='fade-up' data-aos-delay='300'>
+
+
+
+
+
+        <form action="https://formsubmit.co/tayoslayer@gmail.com" 
+method="POST" data-aos='fade-up' data-aos-delay='300'>
           <label for="name">Name:</label>
           <input type="text" name="name" id='name' placeholder=" John Doe" required>
 
           <label for="email">Email:</label>
           <input type="email" name="email" id='email' placeholder="example@mail.com" required>
 
-          <label for="subject">Subject:</label>
+          <label for="_subject">Subject:</label>
+
+
+
+
+
+
           <input type="text" name="" value="">
-          <label for="subject">Message:</label>
-          <textarea name="subject" rows="8" cols="50"></textarea>
-          <input type="submit" value="submit">
+          <input type="hidden" name="_subject" value="New message ***">
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value=" https://temi-t.github.io/portfolio/thankyou.html">
+          <label for="message">Message:</label>
+          <textarea name="message" rows="8" cols="50"></textarea>
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>
