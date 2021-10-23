@@ -786,3 +786,19 @@ button[type='submit']:hover{
     margin-left: 1rem;
   }
 }
+
+/*Thank you page*/
+.thankyou{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.big-thanks{
+      font-family: 'Dancing Script', cursive;
+      font-size: 7rem;
+       margin-bottom: 2rem;
+}
+.response{
+    font-size: 3rem;
+}
