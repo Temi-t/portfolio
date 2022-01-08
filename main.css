@@ -4,10 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100%;
-  height: 100%;
-}
 html {
   height: 100%;
   font-size: 10px;
@@ -374,10 +370,15 @@ li {
 .portfolio-item:last-child {
   margin-bottom: 0;
 }
+.directions-img-div {
+  flex: 1;
+  /* transition: 0.6s; */
+}
 .portfolio-img {
   flex: 1;
   transition: 0.6s;
 }
+
 .portfolio-img:hover {
   box-shadow: 0 0 10px grey;
   background: blue;
@@ -401,11 +402,17 @@ li {
   /* margin-top: 2.5rem; */
   margin: 2.5rem 1.5rem;
   font-size: 1.5rem;
-  color: #3883ff;
+  /* color: #3883ff; */
+
   transition: color 650ms;
 }
 .portfolio-description .cta:hover {
   color: #ffe838;
+}
+.direction-img {
+  height: 50rem;
+  width: 30rem;
+  object-fit: contain;
 }
 /* End portfolio */
 
@@ -559,7 +566,8 @@ button[type="submit"]:hover {
 .vasiti-modal-bg,
 .jetflix-modal-bg,
 .dietApp-modal-bg,
-.travel-site-modal-bg {
+.travel-site-modal-bg,
+.directions-modal-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -577,14 +585,16 @@ button[type="submit"]:hover {
 .vasiti-active,
 .jetflix-active,
 .dietApp-active,
-.travel-site-active {
+.travel-site-active,
+.directions-active {
   visibility: visible;
   opacity: 1;
 }
 .modal-close,
 .jetflix-close,
 .dietApp-close,
-.travel-site-close {
+.travel-site-close,
+.directions-close {
   color: #fff;
   font-size: 30px;
   position: absolute;
@@ -619,7 +629,8 @@ button[type="submit"]:hover {
 .vasiti-demo-box,
 .jetflix-demo-box,
 .dietApp-demo-box,
-.travelSite-demo-box {
+.travelSite-demo-box,
+.directions-demo-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -762,6 +773,10 @@ button[type="submit"]:hover {
   }
   form {
     width: 90%;
+  }
+  iframe {
+    width: 350px;
+    height: 200px;
   }
 }
 @media (max-width: 430px) {
